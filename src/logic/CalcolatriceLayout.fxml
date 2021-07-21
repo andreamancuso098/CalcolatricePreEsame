@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="300.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.CalcolatriceGController">
+   <top>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="60.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="40.0">
+                     <children>
+                        <Label fx:id="lbCalcolo" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane>
+                     <children>
+                        <Label fx:id="lbResult" alignment="BOTTOM_RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="240.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="bntUno" mnemonicParsing="false" onAction="#handleUno" prefHeight="60.0" prefWidth="60.0" text="1" />
+                        <Button fx:id="btnDue" mnemonicParsing="false" onAction="#handleDue" prefHeight="60.0" prefWidth="60.0" text="2" />
+                        <Button fx:id="btnTre" mnemonicParsing="false" onAction="#handleTre" prefHeight="60.0" prefWidth="60.0" text="3" />
+                        <Button fx:id="btnSomma" mnemonicParsing="false" onAction="#handleSomma" prefHeight="60.0" prefWidth="60.0" text="+" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnQuattro" mnemonicParsing="false" onAction="#handleQuattro" prefHeight="60.0" prefWidth="60.0" text="4" />
+                        <Button fx:id="btnCinque" mnemonicParsing="false" onAction="#handleCinque" prefHeight="60.0" prefWidth="60.0" text="5" />
+                        <Button fx:id="btnSei" mnemonicParsing="false" onAction="#handleSei" prefHeight="60.0" prefWidth="60.0" text="6" />
+                        <Button fx:id="btnSottrazione" mnemonicParsing="false" onAction="#handleSottrazione" prefHeight="60.0" prefWidth="60.0" text="-" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnSette" mnemonicParsing="false" onAction="#handleSette" prefHeight="60.0" prefWidth="60.0" text="7" />
+                        <Button fx:id="btnOtto" mnemonicParsing="false" onAction="#handleOtto" prefHeight="60.0" prefWidth="60.0" text="8" />
+                        <Button fx:id="btnNove" mnemonicParsing="false" onAction="#handleNove" prefHeight="60.0" prefWidth="60.0" text="9" />
+                        <Button fx:id="btnMoltiplicazione" mnemonicParsing="false" onAction="#handleMoltiplicazione" prefHeight="60.0" prefWidth="60.0" text="*" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#handleDelete" prefHeight="60.0" prefWidth="60.0" text="CE" />
+                        <Button fx:id="btnZero" mnemonicParsing="false" onAction="#handleZero" prefHeight="60.0" prefWidth="60.0" text="0" />
+                        <Button fx:id="btnUguale" mnemonicParsing="false" onAction="#handleUguale" prefHeight="60.0" prefWidth="60.0" text="=" />
+                        <Button fx:id="btnDIvisione" mnemonicParsing="false" onAction="#handleDivisione" prefHeight="60.0" prefWidth="60.0" text="/" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
